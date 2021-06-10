@@ -1,0 +1,32 @@
+{
+  "name": "hello-glimmer",
+  "version": "1.0.0",
+  "description": "Hello Glimmer.js",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "NODE_ENV=production cross-env webpack",
+    "dev": "webpack server --content-base public",
+    "lint": "eslint . --cache --ext .js"
+  },
+  "author": "Lucas Mendelowski",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "@glimmerx/babel-preset": "^0.6.3",
+    "@glimmerx/eslint-plugin": "^0.6.3",
+    "@glimmerx/webpack-loader": "^0.6.3",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "eslint": "^6.8.0",
+    "eslint-plugin-node": "^11.1.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@glimmerx/component": "^0.6.3",
+    "@glimmerx/core": "^0.6.3",
+    "@glimmerx/modifier": "^0.6.3"
+  }
+}
