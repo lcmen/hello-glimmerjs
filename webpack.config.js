@@ -5,10 +5,10 @@ const prod = mode === 'production'
 
 module.exports = {
   entry: {
-    bundle: [path.resolve(__dirname, 'src/main.js')],
+    bundle: [path.resolve(__dirname, 'src/main.ts')],
   },
   resolve: {
-    extensions: ['.js', '.gjs'],
+    extensions: ['.ts', '.js', '.gts', '.gjs'],
   },
   output: {
     path: path.resolve(__dirname, 'public'),
@@ -18,7 +18,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /(\.js|\.gjs)$/,
+        test: /\.(ts|js|gts|gjs)$/,
         exclude: /(node_modules)/,
         use: ['babel-loader', '@glimmerx/webpack-loader']
       }

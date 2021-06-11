@@ -3,7 +3,7 @@ import { on, action } from '@glimmerx/modifier';
 
 export default class HelloComponent extends Component {
   @tracked
-  count = 1;
+  count: number = 1;
 
   @action
   increment() {

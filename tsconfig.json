@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": ".",
+    "target": "es2018",
+    "declaration": true,
+    "declarationMap": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "rootDir": ".",
+    "strict": true,
+    "strictPropertyInitialization": false
+  },
+  "exclude": ["node_modules"]
+}

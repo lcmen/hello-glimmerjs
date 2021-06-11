@@ -1,12 +1,13 @@
-import Component, { tracked } from '@glimmerx/component';
+import Component, { hbs, tracked } from '@glimmerx/component';
 
 export default class WorldComponent extends Component {
   @tracked
-  count = 0;
+  count: number = 0;
+  interval: number | null = null;
 
-  constructor() {
-    super(...arguments);
-    this.interval = setInterval(() => {
+  constructor(owner, args = {}) {
+    super(owner, args);
+    this.interval = window.setInterval(() => {
       this.count += 1;
     }, 1000);
   }
